@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="quiz-box">
+
+    <h1>Quiz Result</h1>
+
+    <h2 id="score"></h2>
+
+    <button onclick="window.location.href='quiz.html'">
+        Restart Quiz
+    </button>
+
+</div>
+
+<script>
+document.getElementById("score").textContent =
+"Your Score: " + localStorage.getItem("score");
+</script>
+
+</body>
+</html>
